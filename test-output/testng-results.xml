@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-01T19:53:14 CET" name="Default suite" finished-at="2025-09-01T19:53:37 CET" duration-ms="23291">
+    <groups>
+    </groups>
+    <test started-at="2025-09-01T19:53:14 CET" name="Default test" finished-at="2025-09-01T19:53:37 CET" duration-ms="23291">
+      <class name="com.tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.LoginTest@106cc338]" started-at="2025-09-01T19:53:14 CET" name="setup" finished-at="2025-09-01T19:53:25 CET" duration-ms="11178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestResult)[pri:0, instance:com.tests.LoginTest@106cc338]" started-at="2025-09-01T19:53:25 CET" name="setUpTest" finished-at="2025-09-01T19:53:26 CET" duration-ms="417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.failedLoginTest()[pri:1, instance:com.tests.LoginTest@106cc338] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="failedLoginTest()[pri:1, instance:com.tests.LoginTest@106cc338]" started-at="2025-09-01T19:53:26 CET" name="failedLoginTest" finished-at="2025-09-01T19:53:27 CET" duration-ms="1666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedLoginTest -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.tests.LoginTest@106cc338]" started-at="2025-09-01T19:53:27 CET" name="tearDownMethod" finished-at="2025-09-01T19:53:28 CET" duration-ms="243" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=failedLoginTest status=SUCCESS method=LoginTest.failedLoginTest()[pri:1, instance:com.tests.LoginTest@106cc338] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.tests.LoginTest@106cc338]" started-at="2025-09-01T19:53:28 CET" name="tearDownTest" finished-at="2025-09-01T19:53:37 CET" duration-ms="9399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- com.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
