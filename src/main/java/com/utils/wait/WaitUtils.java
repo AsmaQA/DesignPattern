@@ -20,10 +20,10 @@ public class WaitUtils {
 	// Constructeur
 	public WaitUtils(WebDriver driver) {
 		this.driver = driver; // Initialisation du driver
-		  this.wait = new WebDriverWait(driver, Duration.ofSeconds(configReader.getDurationTime())); // Timeout configuré
+		  this.wait = new WebDriverWait(driver, Duration.ofSeconds(configReader.getDurationTime())); // Timeout configurÃ©
 	}
 
-	// Attendre qu'une alerte soit présente
+	// Attendre qu'une alerte soit prÃ©sente
 	public void alertIsPresent() {
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
@@ -32,12 +32,12 @@ public class WaitUtils {
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(locator, Text));
 	}
 
-	// Attendre qu'un élément soit cliquable
+	// Attendre qu'un Ã©lÃ©ment soit cliquable
 	public void elementToBeClickable(By locator) {
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
 	}
 
-	// Attendre qu'un élément soit sélectionné
+	// Attendre qu'un Ã©lÃ©ment soit sÃ©lectionnÃ©
 	public void elementToBeSelected(By locator) {
 		wait.until(ExpectedConditions.elementToBeSelected(locator));
 	}
@@ -47,71 +47,65 @@ public class WaitUtils {
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameLocator));
 	}
 
-	// Attendre que l'élément soit invisible
+	// Attendre que l'Ã©lÃ©ment soit invisible
 	public void invisibilityOfTheElementLocated(By locator) {
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
 	}
 
-	// Attendre qu'un élément avec un texte spécifique soit invisible
+	// Attendre qu'un Ã©lÃ©ment avec un texte spÃ©cifique soit invisible
 	public void invisibilityOfElementWithText(By locator, String text) {
 		wait.until(ExpectedConditions.invisibilityOfElementWithText(locator, text));
 	}
 
-	// Attendre la présence de tous les éléments situés par un sélecteur
+	// Attendre la prÃ©sence de tous les Ã©lÃ©ments situÃ©s par un sÃ©lecteur
 	public void presenceOfAllElementsLocatedBy(By locator) {
 		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
 	}
 
-	// Attendre la présence d'un élément dans le DOM
+	// Attendre la prÃ©sence d'un Ã©lÃ©ment dans le DOM
 	public void presenceOfElementLocated(By locator) {
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
 
-	// Attendre qu'un certain texte soit présent dans un élément situé
+	// Attendre qu'un certain texte soit prÃ©sent dans un Ã©lÃ©ment situÃ©
 	public void textToBePresentInElementLocated(By locator, String text) {
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(locator, text));
 	}
 
-	// Attendre qu'une valeur de texte soit présente dans un élément
+	// Attendre qu'une valeur de texte soit prÃ©sente dans un Ã©lÃ©ment
 	public void textToBePresentInElementValue(By locator, String value) {
 		wait.until(ExpectedConditions.textToBePresentInElementValue(locator, value));
 	}
 
-	// Attendre que le titre de la page soit égal à une valeur spécifique
+	// Attendre que le titre de la page soit Ã©gal Ã  une valeur spÃ©cifique
 	public void titleIs(String title) {
 		wait.until(ExpectedConditions.titleIs(title));
 	}
 
-	// Attendre que le titre de la page contienne une valeur spécifique
+	// Attendre que le titre de la page contienne une valeur spÃ©cifique
 	public void titleContains(String title) {
 		wait.until(ExpectedConditions.titleContains(title));
 	}
 
-	// Attendre qu'un élément soit visible
+	// Attendre qu'un Ã©lÃ©ment soit visible
 	public void visibilityOf(By locator) {
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(locator)));
 	}
 
-	// Attendre que tous les éléments soient visibles
+	// Attendre que tous les Ã©lÃ©ments soient visibles
 	public void visibilityOfAllElements(List<WebElement> elements) {
 		wait.until(ExpectedConditions.visibilityOfAllElements(elements));
 	}
 
-	// Attendre que tous les éléments situés par un sélecteur soient visibles
+	// Attendre que tous les Ã©lÃ©ments situÃ©s par un sÃ©lecteur soient visibles
 	public void visibilityOfAllElementsLocatedBy(By locator) {
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 	}
 
-	// Attendre qu'un élément soit visible
+	// Attendre qu'un Ã©lÃ©ment soit visible
 	public void visibilityOfElementLocated(By locator) {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 
-	public static ConfigReader getConfigReader() {
-		return configReader;
-	}
 
-	public static void setConfigReader(ConfigReader configReader) {
-		WaitUtils.configReader = configReader;
-	}
 }
