@@ -49,9 +49,9 @@ public class BaseDeTest {
 
     @BeforeMethod
     public void setUpTest(ITestResult result) throws ATUTestRecorderException {
-        // Initialisation de ScreenShotUtils avant chaque méthode de test
+        // Initialisation de ScreenShotUtils avant chaque mÃ©thode de test
         screenShot = new ScreenShotUtils(driver);
-        screenShot.startRecording();
+
 
         // Initialisation de LoginPage
     
@@ -64,17 +64,17 @@ public class BaseDeTest {
 
     @AfterMethod
     public void tearDownMethod(ITestResult result) throws IOException {
-        // Traitement après chaque méthode de test
+        // Traitement aprÃ¨s chaque mÃ©thode de test
         reportManager.afterMethod(result);
-        // Ajoutez ici d'autres opérations de nettoyage si nécessaire
+        // Ajoutez ici d'autres opÃ©rations de nettoyage si nÃ©cessaire
     }
 
     @AfterTest
     public void tearDownTest() throws ATUTestRecorderException {
-        // Arrêt de l'enregistrement vidéo et nettoyage
+        // ArrÃªt de l'enregistrement vidÃ©o et nettoyage
         screenShot.stopRecording();
         reportManager.flush();
-        // Fermez le driver si nécessaire
+        // Fermez le driver si nÃ©cessaire
         if (driver != null) {
             driver.quit();
         }
