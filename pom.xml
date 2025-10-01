@@ -79,7 +79,7 @@
 					<source>21</source> <!-- Version du JDK, peut être 17 selon
 					votre configuration -->
 					<target>21</target>
-						<encoding>UTF-8</encoding>
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 		</plugins>
